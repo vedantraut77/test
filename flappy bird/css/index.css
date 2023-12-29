@@ -1,0 +1,117 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#audios
+{
+    display: none;
+}
+
+body {
+    background-color: azure;
+    background-image: -webkit-linear-gradient(rgb(12, 12, 12), rgb(33, 33, 33), #0f415a);
+    min-height: 800px;
+}
+
+#title{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#game {
+    height: 500px;
+    width: 400px;
+    border: 1px solid black;
+    background: url("../images/flap.jpg");
+    background-size: cover;
+    margin: 2rem auto;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#block {
+    width: 50px;
+    height: 500px;
+    background-color: rgb(51, 6, 176);
+    position: relative;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 400px;
+    }
+
+    100% {
+        left: -50px;
+    }
+}
+
+#hole {
+    height: 150px;
+    width: 49px;
+    background-color: rgb(10, 6, 69);
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s linear infinite;
+    opacity: 0.5;
+}
+
+#bird {
+    position: fixed;
+    top: 100px;
+    height: 50px;
+    width: 50px;
+}
+
+#bird img {
+    height: 100px;
+    width: auto;
+}
+
+#result {
+    height: 200px;
+    width: 500px;
+    background-color: #208c8c;
+    margin: 5rem auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+}
+
+#butt {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 11px;
+    background-color: #1d1d1d;
+    color: beige;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#text {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: azure;
+}
+
+#esc{
+    /* margin-left: 200px;
+    margin-top: 30px; */
+    border-radius: 12px;
+    font-size: 30px;
+    background-color: rgb(4, 4, 5);
+    color: rgb(248, 247, 247);
+    display:block;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+}

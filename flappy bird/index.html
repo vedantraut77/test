@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="audios">
+        <audio id="point_scored">
+            <source src="sounds/sfx_point.wav" type="audio/mpeg">
+        </audio>
+        <audio id="wing">
+            <source src="sounds/sfx_wing.wav" type="audio/mpeg">
+        </audio>
+        <audio id="over">
+            <source src="sounds/sfx_die.wav" type="audio/mpeg">
+        </audio>
+    </div>
+    <div id="title">
+        <h2>FLAPPY BIRD</h2>
+    </div>
+    <!-- <div id="screen"> -->
+        <button id="esc" onclick="history.back()">ESC</button>
+
+        <div id="game">
+            <div id="block"><img src="images/bottompipe.png" alt="bottompipe" height="500px" width="50px"></div>
+            <div id="hole"></div>
+            <div id="bird"><img src="images/bird.png" alt="bird"></div>
+        </div>
+
+        <div id="result">
+            <h1>Game Over</h1>
+            <p id="text"></p>
+            <button id="butt" onclick="location.reload()">Restart</button>
+        </div>
+    <!-- </div> -->
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
